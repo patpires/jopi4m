@@ -1,0 +1,29 @@
+#mahjongBoard {
+    position: relative;
+    width: 800px;
+    height:800px;
+    margin: 20px auto;
+    /*background-color: #ddd;*/
+background-image: "https://github.com/patpires/jopi4m/blob/main/bg.png?raw=true";
+}
+
+.tile {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    }
+
+.tile.selected {
+    border: 2px solid #ffff00; /* Vermelho */
+    box-shadow: 0 0 10px #ffff00; /* Sombra Vermelha */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+    z-index: 100; /* Garante que a peça selecionada fique acima das outras */
+}
+
